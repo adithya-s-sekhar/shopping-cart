@@ -1,18 +1,17 @@
-import { useDispatch } from "react-redux";
 import "./ProductList.css";
-import { clearCart } from "../../redux/slices/cartSlice";
 
 const ProductList = ({children}) => {
-    const dispatch = useDispatch();
-    
-    const handleClick = () => {
-        dispatch(clearCart());
-    }
 
     return ( 
-        <table className="product-list">
+        <div className="product-list">
+            <div className="product-list-header">
+                <h2>Available products</h2>
+            </div>
+            <div className="product-list-body">
+            <table className="product-table">
             <thead>
-                <tr className="product-list-header">
+                <tr className="product-table-header">
+                    <th>No. </th>
                     <th>Item</th>
                     <th>Price</th>
                     <th>Actions</th>
@@ -21,12 +20,10 @@ const ProductList = ({children}) => {
             <tbody>
                 {children}
             </tbody>
-            <tfoot>
-                <tr>
-                    <td colSpan={3} align="right"><button onClick={handleClick}>Clear Cart</button></td>
-                </tr>
-            </tfoot>
         </table>
+            </div>
+        </div>
+        
      );
 }
  

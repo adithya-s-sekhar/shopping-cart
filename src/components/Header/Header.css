@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.header-logo,.header-cart{
+    font-size: .8rem;
+}
+
 .header-cart{
     display: flex;
     justify-content: center;

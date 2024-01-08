@@ -11,6 +11,7 @@ const ProductItem = ({product}) => {
 
     return ( 
         <tr className="product-item">
+            <td>{product.id}</td>
             <td>{product.name}</td>
             <td>{product.price}</td>
             <td><button onClick={() => handleClick(product)}>Add to Cart</button></td>

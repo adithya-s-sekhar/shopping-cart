@@ -1,0 +1,8 @@
+.cart-item:nth-of-type(even){
+    background-color: #f0f0f0;
+}
+
+.cart-item{
+    padding: 8px;
+    text-align: center;
+}
