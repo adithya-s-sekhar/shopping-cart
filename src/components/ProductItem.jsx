@@ -1,18 +1,10 @@
 const ProductItem = ({product}) => {
     return ( 
-        <div className="product-item">
-            <div className="product-name">
-                {product.name}
-            </div>
-            <div className="product-price">
-                {product.price}
-            </div>
-            <div className="product-action">
-                <button>
-                    Add to Cart
-                </button>
-            </div>
-        </div>
+        <tr className="product-item">
+            <td>{product.name}</td>
+            <td>{product.price}</td>
+            <td><button>Add to Cart</button></td>
+        </tr>
      );
 }
  

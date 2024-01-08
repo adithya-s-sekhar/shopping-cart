@@ -33,16 +33,10 @@
 }
 
 .product-list{
-  display: flex;
-  flex-direction: column;
-  padding: 8px;
-  width: 500px;
+  border-spacing: 0;
 }
 
 .product-list-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: dodgerblue;
   color: #fff;
   font-size: 1.1rem;
@@ -56,9 +50,6 @@
 
 .product-item{
   padding: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .product-item button{
@@ -68,4 +59,8 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+th,td{
+  padding: 8px;
 }
