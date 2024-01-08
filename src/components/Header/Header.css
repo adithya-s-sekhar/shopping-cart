@@ -1,6 +1,6 @@
 .header{
     grid-area: header;
-    background-color: #212121;
+    background-color: rgb(2, 102, 202);
     color: #fff;
     padding: 8px;
     display: flex;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.cart{
+.header-cart{
     display: flex;
     justify-content: center;
     align-items: center;

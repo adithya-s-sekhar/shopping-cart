@@ -1,6 +1,6 @@
 .app{
   display: grid;
-  grid-template-rows: 20fr 80vh;
+  grid-template-rows: 20vh 80vh;
   grid-template-areas: 
     "header"
     "body"

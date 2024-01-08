@@ -10,11 +10,11 @@ const Header = () => {
                 <h1>Shopping Site</h1>
             </div>
             <div className="header-actions">
-                <div className="cart">
-                    <div className="cart-label">
+                <div className="header-cart">
+                    <div className="header-cart-label">
                         <h2>Cart:</h2>
                     </div>
-                    <div className="cart-items">
+                    <div className="header-cart-items">
                         <h2>{cartProducts.length}</h2>
                     </div>
                 </div>

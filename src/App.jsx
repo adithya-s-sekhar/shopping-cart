@@ -6,6 +6,7 @@ import { products } from './products';
 import ProductItem from './components/ProductList/ProductItem/ProductItem';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import CartList from './components/CartList/CartList';
 
 function App() {
 
@@ -14,9 +15,14 @@ function App() {
             <div className="app">
                 <Header/>
                 <Body>
-                    <ProductList>
-                        {products.map( product => <ProductItem product = {product} key={product.id} />)}
-                    </ProductList>
+                    <div className="main">
+                        <ProductList>
+                            {products.map( product => <ProductItem product = {product} key={product.id} />)}
+                        </ProductList>
+                    </div>
+                    <div className="sidebar">
+                        <CartList/>
+                    </div>
                 </Body>
             </div>
         </Provider>

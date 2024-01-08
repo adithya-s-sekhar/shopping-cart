@@ -1,7 +1,29 @@
 .body{
     grid-area: body;
-    padding: 8px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 79% 20%;
+    grid-template-areas: 
+    "main sidebar"
+    ;
     align-items: center;
+    gap: 1%;
+    background-color: #eee;
+    padding: 0 1%;
+}
+
+.body > div{
+    background-color: #fff;
+    height: 97%;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar{
+    
 }
