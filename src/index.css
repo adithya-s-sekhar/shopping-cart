@@ -5,11 +5,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
+body {
   margin: 0;
   font-family: sans-serif;
 }
 
-div{
+div {
   box-sizing: border-box;
 }

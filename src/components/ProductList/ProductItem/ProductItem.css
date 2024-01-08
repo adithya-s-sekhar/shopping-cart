@@ -1,22 +1,22 @@
-.product-item:nth-of-type(even){
-    background-color: antiquewhite;
+.product-item:nth-of-type(even) {
+  background-color: antiquewhite;
 }
 
-.product-item{
-    padding: 8px;
-    text-align: center;
-    /* height: 50px; */
+.product-item {
+  padding: 8px;
+  text-align: center;
+  /* height: 50px; */
 }
 
-.product-item button{
-    border: 0;
-    background-color: dodgerblue;
-    color: #fff;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
+.product-item button {
+  border: 0;
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-td{
-    padding: 8px;
+td {
+  padding: 8px;
 }

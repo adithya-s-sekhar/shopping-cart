@@ -1,20 +1,21 @@
-.header{
-    grid-area: header;
-    background-color: rgb(2, 102, 202);
-    color: #fff;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  grid-area: header;
+  background-color: rgb(2, 102, 202);
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-logo,.header-cart{
-    font-size: .8rem;
+.header-logo,
+.header-cart {
+  font-size: 0.8rem;
 }
 
-.header-cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+.header-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }

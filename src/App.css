@@ -1,8 +1,7 @@
-.app{
+.app {
   display: grid;
   grid-template-rows: 15vh 85vh;
-  grid-template-areas: 
+  grid-template-areas:
     "header"
-    "body"
-  ;
+    "body";
 }
