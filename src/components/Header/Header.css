@@ -1,0 +1,16 @@
+.header{
+    grid-area: header;
+    background-color: #212121;
+    color: #fff;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}

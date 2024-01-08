@@ -1,0 +1,7 @@
+.body{
+    grid-area: body;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

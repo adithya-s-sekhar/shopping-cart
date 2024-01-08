@@ -1,0 +1,20 @@
+.product-item:nth-of-type(even){
+    background-color: antiquewhite;
+}
+
+.product-item{
+    padding: 8px;
+}
+
+.product-item button{
+    border: 0;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+td{
+    padding: 8px;
+}
