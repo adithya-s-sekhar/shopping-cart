@@ -7,7 +7,7 @@ const CartItem = ({ product, index }) => {
       <td>{index}</td>
       <td>{product.name}</td>
       <td>{product.count}</td>
-      <td>{product.price}</td>
+      <td>{product.price*product.count}</td>
       <td>todo</td>
     </tr>
   );
