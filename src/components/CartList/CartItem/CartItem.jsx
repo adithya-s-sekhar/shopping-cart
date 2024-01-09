@@ -6,7 +6,7 @@ const CartItem = ({ product, index }) => {
     <tr className="cart-item">
       <td>{index}</td>
       <td>{product.name}</td>
-      <td>todo</td>
+      <td>{product.count}</td>
       <td>{product.price}</td>
       <td>todo</td>
     </tr>

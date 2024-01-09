@@ -12,6 +12,24 @@ const CartList = ({ children }) => {
     dispatch(clearCart());
   };
 
+  let tmpCart = [...cartProducts];
+
+  tmpCart = tmpCart.map(item => ({
+    ...item,
+    count: 1
+  }));
+
+  const displayCart = [];
+
+  for (const obj of tmpCart) {
+    const indexA = displayCart.findIndex(item => item.id === obj.id);
+    if (indexA !== -1){
+        displayCart[indexA].count += obj.count;
+    } else {
+        displayCart.push({...obj});
+    }
+  }
+
   return (
     <div className="cart-list">
       <div className="cart-list-header">
@@ -32,7 +50,7 @@ const CartList = ({ children }) => {
             </tr>
           </thead>
           <tbody>
-            {cartProducts.map((product, index) => (
+            {displayCart.map((product, index) => (
               <CartItem product={product} index={index + 1} key={index} />
             ))}
           </tbody>
