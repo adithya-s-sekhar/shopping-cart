@@ -30,6 +30,8 @@ const CartList = ({ children }) => {
     }
   }
 
+  const total = displayCart.reduce((accumulator, product) => accumulator + product.price * product.count, 0);
+
   return (
     <div className="cart-list">
       <div className="cart-list-header">
@@ -62,7 +64,7 @@ const CartList = ({ children }) => {
             Clear Cart
           </button>
         </div>
-        <div className="cart-list-footer-total">Total: todo</div>
+        <div className="cart-list-footer-total">Total: {total}</div>
       </div>
     </div>
   );
