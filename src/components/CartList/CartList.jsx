@@ -30,6 +30,10 @@ const CartList = ({ children }) => {
     }
   }
 
+  let totalCart = 0;
+
+  displayCart.map((item) => totalCart = totalCart + (item.price*item.count))
+
   return (
     <div className="cart-list">
       <div className="cart-list-header">
@@ -62,7 +66,7 @@ const CartList = ({ children }) => {
             Clear Cart
           </button>
         </div>
-        <div className="cart-list-footer-total">Total: todo</div>
+        <div className="cart-list-footer-total">Total: {totalCart}</div>
       </div>
     </div>
   );
